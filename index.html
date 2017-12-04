@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Tetris</title>
+</head>
+<body>
+<div class="tetris__wrapper">
+    <h1>TETRIS</h1>
+    <canvas class="tetris__screen-mobile hidden-tablet hidden-desktop" id="tetris-screen-mobile" height="1250"></canvas>
+    <canvas class="tetris__screen hidden-mobile" id="tetris-screen" width="400" height="700"></canvas>
+    <div class="tetris__explanation hidden-mobile">
+        <h2>Controls:</h2>
+        <p>To move to the left, use <img class="square-key" src="images/cursor-left.svg" alt="cursor left key from a keyboard"> on your keyboard</p>
+        <p>To move to the right, use <img class="square-key" src="images/cursor-right.svg" alt="cursor right key from a keyboard"> on your keyboard</p>
+        <p>To accelerate, use <img class="square-key" src="images/cursor-down.svg" alt="cursor down key from a keyboard"> on your keyboard</p>
+
+        <p>To turn clockwise, use <img src="images/shift.svg" alt="shift key from a keyboard"> on your keyboard</p>
+        <p>To turn counterclockwise, use <img class="spacebar" src="images/spacebar.svg" alt="spacebar key from a keyboard"> on your keyboard</p>
+
+
+        <p id="score"></p>
+    </div>
+    <div class="controls hidden-tablet hidden-desktop">
+        <img class="square-key" src="images/cursor-left.svg" alt="cursor left key from a keyboard">
+        <img class="square-key" src="images/cursor-down.svg" alt="cursor down key from a keyboard">
+        <img class="square-key" src="images/cursor-right.svg" alt="cursor right key from a keyboard">
+                <img class="shift-key" src="images/shift.svg" alt="shift key from a keyboard">
+        <img class="spacebar" src="images/spacebar.svg" alt="spacebar key from a keyboard">
+    </div>
+</div>
+<script src="js/tetris.js"></script>
+</body>
+</html>
